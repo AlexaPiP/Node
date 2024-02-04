@@ -1,7 +1,5 @@
 # Install-Avail-Full-Node
 # This is a guide for installing Avail Node on Ubuntu 22.04.
- Video:
- https://youtu.be/HYBzK-jJIeQ
 
   *** 
 X1.** Install Rust**
@@ -83,7 +81,7 @@ After=network.target
 StartLimitIntervalSec=0
 [Service] 
 User=root 
-ExecStart= /root/avail/target/release/data-avail -d /root/avail/output --chain goldberg --validator --name "Dinhcongtac221" --reserved-nodes "/dns/bootnode-001.goldberg.avail.tools/tcp/30333/p2p/12D3KooWCVqFvrP3UJ1S338Gb8SHvEQ1xpENLb45Dbynk4hu1XGN" "/dns/bootnode-002.goldberg.avail.tools/tcp/30333/p2p/12D3KooWD6sWeWCG5Z1qhejhkPk9Rob5h75wYmPB6MUoPo7br58m" "/dns/bootnode-003.goldberg.avail.tools/tcp/30333/p2p/12D3KooWMR9ZoAVWJv6ahraVzUCfacNbFKk7ABoWxVL3fJ3XXGDw" "/dns/bootnode-004.goldberg.avail.tools/tcp/30333/p2p/12D3KooWMuyLE3aPQ82HTWuPUCjiP764ebQrZvGUzxrYGuXWZJZV" "/dns/bootnode-005.goldberg.avail.tools/tcp/30333/p2p/12D3KooWKJwbdcZ7QWcPLHy3EJ1UiffaLGnNBMffeK8AqRVWBZA1" "/dns/bootnode-006.goldberg.avail.tools/tcp/30333/p2p/12D3KooWM8AaHDH8SJvg6bq4CGQyHvW2LH7DCHbdv633dsrti7i5" --reserved-only
+ExecStart= /root/avail/target/release/data-avail -d /root/avail/output --chain goldberg --validator --name "TEST NODE" --reserved-nodes "/dns/bootnode-001.goldberg.avail.tools/tcp/30333/p2p/12D3KooWCVqFvrP3UJ1S338Gb8SHvEQ1xpENLb45Dbynk4hu1XGN" "/dns/bootnode-002.goldberg.avail.tools/tcp/30333/p2p/12D3KooWD6sWeWCG5Z1qhejhkPk9Rob5h75wYmPB6MUoPo7br58m" "/dns/bootnode-003.goldberg.avail.tools/tcp/30333/p2p/12D3KooWMR9ZoAVWJv6ahraVzUCfacNbFKk7ABoWxVL3fJ3XXGDw" "/dns/bootnode-004.goldberg.avail.tools/tcp/30333/p2p/12D3KooWMuyLE3aPQ82HTWuPUCjiP764ebQrZvGUzxrYGuXWZJZV" "/dns/bootnode-005.goldberg.avail.tools/tcp/30333/p2p/12D3KooWKJwbdcZ7QWcPLHy3EJ1UiffaLGnNBMffeK8AqRVWBZA1" "/dns/bootnode-006.goldberg.avail.tools/tcp/30333/p2p/12D3KooWM8AaHDH8SJvg6bq4CGQyHvW2LH7DCHbdv633dsrti7i5" --reserved-only
 Restart=always 
 RestartSec=120
 [Install] 
@@ -244,7 +242,7 @@ User=root
 Type=simple
 Restart=always
 RestartSec=120
-ExecStart=/root/avail-node/data-avail-linux-amd64 -d ./output --chain goldberg --port 30333 --validator --name "dinhcongac221"
+ExecStart=/root/avail-node/data-avail-linux-amd64 -d ./output --chain goldberg --port 30333 --validator --name "TEST NODE"
 
 [Install]
 WantedBy=multi-user.target
