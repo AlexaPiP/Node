@@ -1,3 +1,11 @@
+     ....
+    .    .
+   . . . ..
+  .        .
+ .          .
+
+   
+
 # Install-Avail-Full-Node
 # This is a guide for installing Avail Node on Ubuntu 22.04.
 
@@ -176,7 +184,7 @@ After=network.target
 StartLimitIntervalSec=0
 [Service] 
 User=root 
-ExecStart= /root/avail/target/release/data-avail -d ./output --chain goldberg --validator --name "Dinhcongtac221"
+ExecStart= /root/avail/target/release/data-avail -d ./output --chain goldberg --validator --name "NODE TEST"
 Restart=always 
 RestartSec=120
 [Install] 
